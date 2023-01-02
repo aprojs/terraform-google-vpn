@@ -67,4 +67,5 @@ output "vpn_tunnels_self_link-dynamic" {
 output "ipsec_secret-dynamic" {
   description = "The secret"
   value       = google_compute_vpn_tunnel.tunnel-dynamic.*.shared_secret
+  sensitive = true
 }
